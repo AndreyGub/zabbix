@@ -1,18 +1,42 @@
-Установка Zabbix server:
-Установите PostgreSQL:
-sudo apt install postgresql
-Добавьте репозиторий Zabbix:
-wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-
-release_6.0-4%2Bdebian11_all.deb 
-dpkg -i zabbix-release_6.0-4+debian11_all.deb 
-apt update
-Запустите Zabbix server:
-Создайте пользователя БД:
-Создайте БД:
-sudo apt install zabbix-server-pgsql zabbix-frontend-php php7.4-pgsql zabbix-apache-conf zabbix-sql-
-scripts nano -y # zabbix-agent
-sudo -u postgres createuser --pwprompt zabbix
-sudo -u postgres createdb -O zabbix zabbix
+Установка PostgreSQL
+
+# Обновление пакетов
+sudo apt update
+
+sudo apt upgrade -y
+
+# Установка PostgreSQL
+sudo apt install -y postgresql postgresql-contrib
+
+# Запуск и включение PostgreSQL
+sudo systemctl start postgresql
+
+sudo systemctl enable postgresql
+
+Установка  Zabbix
+
+# Установка необходимых пакетов
+sudo apt install -y wget curl gnupg2
+
+wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian11_all.deb
+
+sudo dpkg -i zabbix-release_6.4-1+debian11_all.deb
+
+sudo apt update
+
+
+# Проверка статуса всех служб
+
+sudo systemctl status zabbix-server
+
+sudo systemctl status zabbix-agent
+
+sudo systemctl status apache2
+
+sudo systemctl status postgresql
+
+После выполнения всех команд откркрываем в браузере: http://192.168.85.149/zabbix
+
 
 <img width="763" height="320" alt="image" src="https://github.com/user-attachments/assets/f96cdc33-77a6-4c4d-b680-47445d75a0b3" />
 <img width="748" height="518" alt="image" src="https://github.com/user-attachments/assets/6df3c43a-1ca7-4d31-8920-4c6a97141873" />
