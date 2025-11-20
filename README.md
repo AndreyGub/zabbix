@@ -1,3 +1,5 @@
+# Задание 1
+
 Установка PostgreSQL
 
 # Обновление пакетов
@@ -47,3 +49,9 @@ sudo systemctl status postgresql
 <img width="754" height="432" alt="image" src="https://github.com/user-attachments/assets/6b28f10d-c8b0-4e8a-b00e-52326e67bb17" />
 <img width="751" height="399" alt="image" src="https://github.com/user-attachments/assets/d1933754-cd11-4d4c-b35d-e6ac76be9f29" />
 <img width="756" height="400" alt="image" src="https://github.com/user-attachments/assets/85d67ebe-e5eb-4477-bd45-52231bbdaac5" />
+
+
+
+# Задание 2
+
+
