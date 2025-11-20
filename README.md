@@ -71,5 +71,11 @@ sudo systemctl status postgresql
 
 
 
+# Задание 3
+
+
+<img width="1890" height="489" alt="image" src="https://github.com/user-attachments/assets/85f7bbcc-695e-4d88-b7c6-f46b8a58bd4b" />
+
+<img width="1727" height="516" alt="image" src="https://github.com/user-attachments/assets/14adcbf6-b781-4b50-a579-e777a643a22b" />
 
 
