@@ -54,4 +54,22 @@ sudo systemctl status postgresql
 
 # Задание 2
 
+1.скриншот раздела Configuration > Hosts, где видно, что агенты подключены к серверу
+
+<img width="1909" height="659" alt="image" src="https://github.com/user-attachments/assets/372baada-e465-46cb-93d1-353b87a36624" />.
+
+2. скриншот лога zabbix agent, где видно, что он работает с сервером
+
+
+<img width="1047" height="548" alt="image" src="https://github.com/user-attachments/assets/63eb9280-172b-41fc-a407-1e2e6112c6d3" />
+
+
+3.  скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
+
+
+   <img width="1854" height="905" alt="image" src="https://github.com/user-attachments/assets/f4fe7af7-d690-4d52-8fc1-dc551adb4c8a" />
+
+
+
+
 
